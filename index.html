@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e29">
+  <meta name="description" content="Анимационный урок о басмале: смысл слов раскрывается через действие.">
+  <title>Басмала — оживающий урок</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101e29'/%3E%3Cpath d='M14 43h36M18 33h28M24 23h16' stroke='%23d6ad6d' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">02</span><span>УРОК О БАСМАЛЕ</span></div>
+      <div class="top-right"><span class="scene-count" id="sceneCount">01 / 06</span><button class="text-button" id="notesButton" type="button" aria-haspopup="dialog">Об уроке <span aria-hidden="true">↗</span></button></div>
+    </header>
+
+    <main id="main">
+      <div class="chapter-row"><span class="chapter-kicker" id="chapterKicker">ПРОЛОГ</span><span class="chapter-line"></span><span class="chapter-time" id="chapterTime">00:00</span></div>
+      <section class="theater" aria-label="Анимационный урок">
+        <div id="sceneHost" class="scene-host"></div>
+        <div class="stage-top"><span id="stageNumber">01</span><span class="stage-symbol" aria-hidden="true">✦</span><span>БАСМАЛА</span></div>
+        <div class="caption-wrap" id="captionWrap"><p class="caption-eyebrow" id="captionEyebrow"></p><h1 id="captionTitle"></h1><p class="caption-text" id="captionText"></p></div>
+        <div class="intro-shade" id="introShade"><div class="intro-content"><span class="intro-small">АНИМАЦИОННЫЙ УРОК 02</span><h2>Басмала</h2><p>Одно начало. Несколько смыслов.</p><button id="startButton" class="start-button" type="button">Начать путешествие <span aria-hidden="true">↗</span></button></div></div>
+        <div class="scene-finished" id="sceneFinished" hidden><span class="finish-dot"></span> Сцена завершена · можно идти дальше</div>
+      </section>
+      <div class="transport">
+        <div class="progress-track" id="progressTrack" aria-label="Ход сцены"><span id="progressFill"></span></div>
+        <div class="control-row">
+          <div class="left-controls"><button class="round-button" id="playPauseButton" type="button" aria-label="Пауза"><span id="playPauseIcon">Ⅱ</span></button><button class="round-button" id="replayButton" type="button" aria-label="Повторить сцену"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a8 8 0 1 1 1.9 5.2M4 5v6h6"/></svg></button><span class="control-hint" id="controlHint">Смотрите, как раскрывается смысл</span></div>
+          <div class="right-controls"><button class="previous-button" id="previousButton" type="button">← Назад</button><button class="next-button" id="nextButton" type="button">Дальше <span aria-hidden="true">→</span></button></div>
+        </div>
+      </div>
+    </main>
+    <footer><span>Смысл через действие</span><span>На основе страниц 69–77 приложенного урока</span></footer>
+  </div>
+
+  <dialog id="notesDialog" class="notes-dialog" aria-labelledby="notesTitle"><div class="notes-head"><div><span class="notes-kicker">ИСТОЧНИК И ПОЯСНЕНИЯ</span><h2 id="notesTitle">Об уроке</h2></div><button id="closeNotes" class="close-notes" type="button" aria-label="Закрыть">×</button></div><div class="notes-body" id="notesBody"></div></dialog>
+</body>
+</html>
